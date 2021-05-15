@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/customborder"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img_sub_item"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/news" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitleNews"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="TITULO">
+                </TextView>
+
+
+            <TextView
+                android:id="@+id/txtSubTitleNews"
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="subtitulo">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtBodyNews"
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="DESCRIPCION"/>
+            <TextView
+                android:id="@+id/expandText"
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#ff33"
+                android:text="Expandir Noticia"/>
+
+<!--            <com.ms.square.android.expandabletextview.ExpandableTextView
+                    android:id="@+id/expand_text_view"
+                    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                    expandableTextView:animDuration="2000"
+                    expandableTextView:maxCollapsedLines="3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:id="@+id/txtBodyNews"
+                        style="@style/AppTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="#ff33"
+                        android:text="DESCRIPCION">
+
+                    </TextView>
+                    <ImageButton
+                        android:id="@+id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        >
+
+                    </ImageButton>
+
+
+                </com.ms.square.android.expandabletextview.ExpandableTextView>-->
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
